@@ -36,3 +36,13 @@ task("day2_2", JavaExec::class) {
     main = "Day2Task2Kt"
     classpath = sourceSets["main"].runtimeClasspath
 }
+
+task("day3_1", JavaExec::class) {
+    main = "Day3Task1Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
+task("day3_2", JavaExec::class) {
+    main = "Day3Task2Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
