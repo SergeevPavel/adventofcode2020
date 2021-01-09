@@ -92,3 +92,8 @@ task("day11_1", JavaExec::class) {
     main = "day11.task1.Day11Task1Kt"
     classpath = sourceSets["main"].runtimeClasspath
 }
+
+task("day14_1", JavaExec::class) {
+    main = "day14.task1.Day14Task1Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
