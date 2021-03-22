@@ -7,6 +7,8 @@ plugins {
 group = "me.pavel"
 version = "1.0-SNAPSHOT"
 
+
+
 repositories {
     mavenCentral()
 }
@@ -95,5 +97,15 @@ task("day11_1", JavaExec::class) {
 
 task("day14_1", JavaExec::class) {
     main = "day14.task1.Day14Task1Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
+task("day16_1", JavaExec::class) {
+    main = "day16.task1.Day16Task1Kt"
+    classpath = sourceSets["main"].runtimeClasspath
+}
+
+task("day16_2", JavaExec::class) {
+    main = "day16.task2.Day16Task2Kt"
     classpath = sourceSets["main"].runtimeClasspath
 }

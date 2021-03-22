@@ -8,6 +8,7 @@ fun parseCommand(line: String): Pair<Char, Int> {
 }
 
 fun main() {
+
     var x = 0
     var y = 0
     var dir = 0

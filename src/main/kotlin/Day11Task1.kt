@@ -9,6 +9,7 @@ data class Field(private val data: MutableList<Char>,
 
     companion object {
         fun fromString(s: String): Field {
+            
             val lines = s.lines()
             val height = lines.size
             val width = lines.firstOrNull()!!.length
@@ -90,6 +91,9 @@ fun step(field: Field): Field {
 
 fun main() {
     var field = Field.fromString(readInput("day11.txt"))
+    val x = 23
+    
+    
     println("Width: ${field.width} Height: ${field.height} \n$field")
     var round = 0
     while (round < 10000) {

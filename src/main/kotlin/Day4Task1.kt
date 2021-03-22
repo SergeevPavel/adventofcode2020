@@ -11,6 +11,7 @@ fun main() {
         val keys = keyValues.map() {
            it.first
         }.toSet()
+        
         keys.containsAll(requiredKeys)        
     }.filter { it }.count()
     println("Result: $validCount")
